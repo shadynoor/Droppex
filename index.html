@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Droppex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="imgs/logo.svg" alt="logo" />
+        </div>
+
+        <div class="new-folder">
+          <button>
+            <img src="imgs/folder-add.png" alt="folder" /> New Folder
+          </button>
+        </div>
+
+        <div class="nav">
+          <button class="active">
+            <img src="imgs/category.svg" alt="home" /> Home
+          </button>
+          <button><img src="imgs/trash.svg" alt="trash" /> Trash</button>
+        </div>
+        <div class="line"></div>
+
+        <div class="storage">
+          <button><img src="imgs/cloud.svg" alt="cloud" /> Storage</button>
+
+          <div class="progress-bar">
+            <div class="circle">
+              <span>10%</span>
+            </div>
+            <p>10GB / 100GB</p>
+          </div>
+        </div>
+      </aside>
+      <div class="main-content">
+        <div class="header">
+          <div class="search">
+            <label for="search"
+              ><img src="imgs/search-normal.svg" alt="search"
+            /></label>
+            <input
+              placeholder="Search for file, folder, shared storehouse"
+              type="text"
+              name="search"
+              id="search"
+            />
+            <img class="input-icon" src="imgs/setting.svg" alt="setting" />
+          </div>
+          <div class="file">
+            <label for="file">
+              <img src="imgs/cloud-cross.svg" alt="drop" />
+              Drag and drop &nbsp;<span>files</span> &nbsp;,&nbsp;<span
+                >folders</span
+              >
+              &nbsp;or &nbsp;<span>links</span></label
+            >
+            <input type="file" name="file" id="file" />
+          </div>
+
+          <div class="user">
+            <img src="imgs/copy.svg" alt="copy" />
+            <img src="imgs/user.svg" alt="user" />
+          </div>
+        </div>
+        <div class="table">
+          <div class="table-info">
+            <span>Ramy Main Drive</span>
+            <div class="icon">
+              <img src="imgs/info.svg" alt="info" />
+            </div>
+          </div>
+          <div class="table-actions">
+            <span>Select folder or file to see options</span>
+            <div class="actions">
+              <span>No item selected</span>
+              <div class="v-line"></div>
+              <img src="imgs/sort.svg" alt="action" />
+              <img src="imgs/filter.svg" alt="action" />
+              <div class="v-line"></div>
+              <img src="imgs/ShowHide.svg" alt="action" />
+              <img src="imgs/select.svg" alt="action" />
+              <img src="imgs/box.svg" alt="action" />
+              <img src="imgs/back.svg" alt="action" />
+            </div>
+          </div>
+
+          <div class="custom-table">
+            <div class="head row">
+              <div>
+                <div class="check">
+                  <input type="checkbox" id="checkbox1" />
+                  <label for="checkbox1"></label>
+                </div>
+              </div>
+              <div>Name</div>
+              <div>Uploaded</div>
+              <div>Size</div>
+              <div>View No.</div>
+              <div class="custom-head">
+                Last modified
+                <span class="arrow">
+                  <img src="imgs/arrow-down.svg" alt="arrow" />
+                </span>
+              </div>
+            </div>
+
+            <div class="table-body">
+              <div class="row">
+                <div>
+                  <div class="check">
+                    <input type="checkbox" id="checkbox2" title="check" />
+                    <label for="checkbox2"></label>
+                  </div>
+                </div>
+                <div class="elem-title">
+                  <img src="imgs/folder.svg" alt="folder" />Documents
+                </div>
+                <div>Nov 26, 2022 3:18AM</div>
+                <div>1.8 MB</div>
+                <div>0 times</div>
+                <div>Dec 10, 2022 2:00PM you</div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <div class="check">
+                    <input type="checkbox" id="checkbox3" title="check" />
+                    <label for="checkbox2"></label>
+                  </div>
+                </div>
+                <div class="elem-title new">
+                  <img src="imgs/img1.svg" alt="img" />the file that is the ...
+                  .png
+                </div>
+                <div>Nov 26, 2022 3:18AM</div>
+                <div>1.8 MB</div>
+                <div>0 times</div>
+                <div>Dec 10, 2022 2:00PM you</div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <div class="check">
+                    <input
+                      type="checkbox"
+                      id="checkbox2"
+                      title="check"
+                      title="check"
+                    />
+                    <label for="checkbox4"></label>
+                  </div>
+                </div>
+                <div class="elem-title">
+                  <img src="imgs/pdf.svg" alt="img" />Project Details.pdf
+                </div>
+                <div>Nov 26, 2022 3:18AM</div>
+                <div>1.8 MB</div>
+                <div>0 times</div>
+                <div>Dec 10, 2022 2:00PM you</div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <div class="check">
+                    <input type="checkbox" id="checkbox2" title="check" />
+                    <label for="checkbox2"></label>
+                  </div>
+                </div>
+                <div class="elem-title new">
+                  <img src="imgs/img1.svg" alt="img" />coding.jpg
+                </div>
+                <div>Nov 26, 2022 3:18AM</div>
+                <div>1.8 MB</div>
+                <div>0 times</div>
+                <div>Dec 10, 2022 2:00PM you</div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <div class="check">
+                    <input type="checkbox" id="checkbox2" title="check" />
+                    <label for="checkbox2"></label>
+                  </div>
+                </div>
+                <div class="elem-title">
+                  <img src="imgs/img1.svg" alt="img" />the file that is the ...
+                  .png
+                </div>
+                <div>Nov 26, 2022 3:18AM</div>
+                <div>1.8 MB</div>
+                <div>0 times</div>
+                <div>Dec 10, 2022 2:00PM you</div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <div class="check">
+                    <input type="checkbox" id="checkbox2" title="check" />
+                    <label for="checkbox2"></label>
+                  </div>
+                </div>
+                <div class="elem-title">
+                  <img src="imgs/img1.svg" alt="img" />the file that is the ...
+                  .png
+                </div>
+                <div>Nov 26, 2022 3:18AM</div>
+                <div>1.8 MB</div>
+                <div>0 times</div>
+                <div>Dec 10, 2022 2:00PM you</div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <div class="check">
+                    <input type="checkbox" id="checkbox2" title="check" />
+                    <label for="checkbox2"></label>
+                  </div>
+                </div>
+                <div class="elem-title">
+                  <img src="imgs/img1.svg" alt="img" />the file that is the ...
+                  .png
+                </div>
+                <div>Nov 26, 2022 3:18AM</div>
+                <div>1.8 MB</div>
+                <div>0 times</div>
+                <div>Dec 10, 2022 2:00PM you</div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <div class="check">
+                    <input type="checkbox" id="checkbox2" title="check" />
+                    <label for="checkbox2"></label>
+                  </div>
+                </div>
+                <div class="elem-title">
+                  <img src="imgs/img1.svg" alt="img" />the file that is the ...
+                  .png
+                </div>
+                <div>Nov 26, 2022 3:18AM</div>
+                <div>1.8 MB</div>
+                <div>0 times</div>
+                <div>Dec 10, 2022 2:00PM you</div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <div class="check">
+                    <input type="checkbox" id="checkbox2" title="check" />
+                    <label for="checkbox2"></label>
+                  </div>
+                </div>
+                <div class="elem-title new">
+                  <img src="imgs/pdf.svg" alt="img" />the file that is the ...
+                  .png
+                </div>
+                <div>Nov 26, 2022 3:18AM</div>
+                <div>1.8 MB</div>
+                <div>0 times</div>
+                <div>Dec 10, 2022 2:00PM you</div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <div class="check">
+                    <input type="checkbox" id="checkbox2" title="check" />
+                    <label for="checkbox2"></label>
+                  </div>
+                </div>
+                <div class="elem-title">
+                  <img src="imgs/img1.svg" alt="img" />the file that is the ...
+                  .png
+                </div>
+                <div>Nov 26, 2022 3:18AM</div>
+                <div>1.8 MB</div>
+                <div>0 times</div>
+                <div>Dec 10, 2022 2:00PM you</div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <div class="check">
+                    <input type="checkbox" id="checkbox2" title="check" />
+                    <label for="checkbox2"></label>
+                  </div>
+                </div>
+                <div class="elem-title">
+                  <img src="imgs/img1.svg" alt="img" />the file that is the ...
+                  .png
+                </div>
+                <div>Nov 26, 2022 3:18AM</div>
+                <div>1.8 MB</div>
+                <div>0 times</div>
+                <div>Dec 10, 2022 2:00PM you</div>
+              </div>
+
+              <div class="row">
+                <div>
+                  <div class="check">
+                    <input type="checkbox" id="checkbox2" title="check" />
+                    <label for="checkbox2"></label>
+                  </div>
+                </div>
+                <div class="elem-title">
+                  <img src="imgs/img1.svg" alt="img" />the file that is the ...
+                  .png
+                </div>
+                <div>Nov 26, 2022 3:18AM</div>
+                <div>1.8 MB</div>
+                <div>0 times</div>
+                <div>Dec 10, 2022 2:00PM you</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
